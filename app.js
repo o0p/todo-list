@@ -9,7 +9,15 @@ form.addEventListener('submit', (e) => {
 
 function addTodo(todo) {
     let todoText = input.value;
+
     if (todo) {
         todoText = todo.text;
     };
+
+    if (todoText) {
+        const todoEl = document.createElement('li');
+        if (todo && todo.completed) {
+            todoEl.classList.add('completed');
+        };
+    }
 };
