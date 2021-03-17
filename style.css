@@ -41,3 +41,10 @@ form {
 .input::placeholder {
     color: #d5d5d5;
 }
+
+.todos {
+    background-color: #fff;
+    padding: 0;
+    list-style-type: none;
+    margin: none;
+}
