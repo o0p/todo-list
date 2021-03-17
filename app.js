@@ -19,5 +19,8 @@ function addTodo(todo) {
         if (todo && todo.completed) {
             todoEl.classList.add('completed');
         };
-    }
+        todoEl.innerText = todoText;
+        todosUL.appendChild(todoEl);
+        input.value = '';
+    };
 };
